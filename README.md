@@ -59,6 +59,12 @@ After preprocessing (Step 5 completed), you can train any model individually.
     ```
     Output: `submission_deepfm.csv`
 
+*   **NeuMF** (Hybrid + SBERT):
+    ```bash
+    python src/train_neumf.py
+    ```
+    Output: `submission_neumf.csv`
+
 ## Requirements
 
 *   pandas
@@ -68,7 +74,8 @@ After preprocessing (Step 5 completed), you can train any model individually.
 *   lightgbm
 *   xgboost
 *   catboost
-*   torch (for DeepFM)
+*   torch (for DeepFM and NeuMF)
+*   sentence-transformers (for NeuMF text embeddings)
 
 ## Notes
 
